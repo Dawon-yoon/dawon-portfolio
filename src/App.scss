@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin displayFlex{
+    display: flex;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #1B1D20;
+    overflow-x: hidden;
+}
+
+//common styles
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+// navbar
+.navbar{
+    font-family: 'PartialSansKR-Regular';
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include displayFlex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    .menus{
+        @include displayFlex;
+        justify-content: space-between;
+        width: 40%;
+        margin-right: 25px;
+        div{
+            text-transform: uppercase;
+            cursor: pointer;
+            color: white;
+        }
+    }
+}
