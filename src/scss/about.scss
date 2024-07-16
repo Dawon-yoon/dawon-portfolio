@@ -1,33 +1,17 @@
-@font-face {
-    font-family: 'Danjo-bold-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .about{
-    border-top: 1px solid white;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2.5rem;
-    h2{
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-        font-size: 40px;
-        font-weight: 600;
-        font-family: 'Danjo-bold-Regular';
-    }
     .browser{
         position:relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 60%;
+        width: 85%;
+        height: 70%;
         margin: 0 auto;
         background-color: #272A36;
         border-radius: 13px;
@@ -71,15 +55,60 @@
             width: 100%;
             font-size: 20px;
             .icons{
-                padding-top: 38px;
-                width: 8%;
+                padding-top: 42px;
+                width: 50px;
                 color: white;
-                border-right: 1px solid white;
+                border-right: 1px solid #313444;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 25px;
+                span{
+                    display: block;
+                    cursor: pointer;
+                    margin-bottom: 8px;
+                }
             }
             .codes{
                 padding-top: 38px;
-                padding-left: 1rem;
+                padding-left: 1.5rem;
                 color: white;
+                p{
+                    margin: 0;
+                    margin-top: 11px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    &.code{
+                        font-weight: 400;
+                        font-style: 18px;
+                    }
+                    span{
+                        &.num{
+                            font-weight: 400;
+                            color: #5C5D64;
+                            margin-right: 2rem;
+                        }
+                        &.yellow{
+                            color: #FFCD34;
+                        }
+                        &.pink{
+                            color: #C792E9;
+                        }
+                        &.green{
+                            color: #ACF656;
+                        }
+                        &.blue{
+                            color: #88DDF0;
+                        }
+                        &.red{
+                            color: #F92372;
+                        }
+                        &.comment{
+                            color: #5C5D64;
+                        }
+                    }
+                }
             }
         }
     }
