@@ -5,6 +5,8 @@ import About from './components/About';
 import Skils from './components/Skils';
 
 function App() {
+  //skill data
+  
   return (
     <div>
       <Nav />

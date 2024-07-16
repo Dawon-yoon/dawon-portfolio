@@ -1,7 +1,23 @@
 .skills{
+    background-image: radial-gradient(#2F303A 1px, transparent 0);
+    background-size: 40px 40px;
     border-top:1px solid white;
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    .tag-btn{
+        border: 3px solid grey;
+        padding: 0.5rem 3rem;
+        border-radius: 30px;
+        width: 100px;
+        margin-left: 3rem;
+        text-align:center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    }
+    img{
+        width:50px;
+        height: 50px;
+    }  
 }
