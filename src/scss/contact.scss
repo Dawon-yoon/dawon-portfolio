@@ -1,0 +1,44 @@
+.contact{
+    padding-top:5rem;
+    border-top:1px solid white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+    div{
+        height: 50%;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-size: 25px;
+            font-weight: 500;
+
+        }
+        p{
+            font-size: 25px;
+
+        }
+    }
+    .border{
+        width: 280px;
+        height: 8px;
+        background-color: white;
+        box-shadow: 0 -5px 40px #ffffff;
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top: 1px solid white;
+        color:grey;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+}

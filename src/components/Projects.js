@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className='wrapper'>
+      <h2>Project</h2>
+    </div>
   )
 }
 

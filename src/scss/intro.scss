@@ -1,29 +1,3 @@
-@keyframes moveUpDown {
-    0% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 .intro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    flex-direction: column;    
-    .scroll{
-        position: absolute;
-        bottom: 3rem;
-        text-transform: uppercase;
-        p{
-            font-size: 15px;
-        }
-        div{
-            font-size: 23px;
-            text-align: center;
-            animation: moveUpDown 1.1s ease-in-out infinite;
-        }
-    }
+    position: relative;
 }

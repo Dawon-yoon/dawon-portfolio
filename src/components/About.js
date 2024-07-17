@@ -2,17 +2,15 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faCodeBranch, faTableCellsLarge,faGear } from '@fortawesome/free-solid-svg-icons'
 import { faGitAlt } from '@fortawesome/free-brands-svg-icons';
-import { faCopy,faCircleUser } from '@fortawesome/free-regular-svg-icons';
+import { faCopy, faCircleUser } from '@fortawesome/free-regular-svg-icons';
+import Stars from './Stars';
 import '../scss/about.scss';
-
-const profile = {
-    language:['kann','cyuu']
-}
 
 
 const About = () => {
   return (
-    <div className='wrapper about'>
+      <div className='wrapper about'>
+          <Stars/>
           <h2>about me</h2>
           <div className='browser'>
               <div className='header'>
