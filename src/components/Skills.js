@@ -13,9 +13,10 @@ const Skills = ({ skillData,toolData }) => {
     }
 
   return (
-    <div className='skills'>
+    <div className='bg-dote'>
           <h2>Tech Skill</h2>
-         <span className='tag'># MY-SKILL</span>
+          <div className='skills'>
+          <span className='tag'># MY-SKILL</span>
           <ul>
               {skillData?.map((skill,index) => (
                   <li key={index}
@@ -44,6 +45,7 @@ const Skills = ({ skillData,toolData }) => {
                 </li>
                 ))}
           </ul>
+        </div>
     </div>
   )
 }
