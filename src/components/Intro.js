@@ -6,8 +6,11 @@ import Stars from './Stars';
 
 const Intro = () => {
   return (
-    <div className='wrapper'>
+    <div className='wrapper intro'>
      <Stars/>
+      <h1>YOON DAWON<br />
+          PORTFOLIO
+      </h1>
     </div>
   )
 }
