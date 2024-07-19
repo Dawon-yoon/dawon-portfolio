@@ -5,24 +5,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 3rem;
     .browser{
         position:relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 85%;
+        width: 70%;
         height: 70%;
         margin: 0 auto;
         background-color: #272A36;
         border-radius: 13px;
+        @media(max-width:768px){
+            width: 90%;
+        }
         .header{
             position:absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 35px;
-            border-bottom: 1px solid black;
+            height: 40px;
+            border-bottom: 1px solid #3E404B;
             background-color: #313444;
             border-top-left-radius: 13px;
             border-top-right-radius: 13px;
@@ -82,7 +85,7 @@
                     font-weight: 500;
                     &.code{
                         font-weight: 400;
-                        font-style: 18px;
+                        font-size: 18px;
                     }
                     span{
                         &.num{

@@ -20,7 +20,7 @@ const Contact = () => {
         </div>
         <div>
           <span><FontAwesomeIcon icon={faGithub} />  GITHUB</span>
-          <p><a href='https://github.com/Dawon-yoon'>github.com/Dawon-yoon</a></p>
+          <p><a href='https://github.com/Dawon-yoon' target='_blank' rel="noreferrer noopener">github.com/Dawon-yoon</a></p>
         </div>
         <span className='border'></span>
       </div>

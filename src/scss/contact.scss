@@ -1,6 +1,5 @@
 .contact{
     padding-top:5rem;
-    border-top:1px solid white;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -21,7 +20,9 @@
         }
         p{
             font-size: 25px;
-
+            a{
+                color: white;
+            }
         }
     }
     .border{
@@ -35,7 +36,6 @@
         bottom: 0;
         left: 0;
         right: 0;
-        border-top: 1px solid white;
         color:grey;
         padding: 1rem;
         text-align: center;

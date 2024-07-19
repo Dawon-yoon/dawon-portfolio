@@ -54,16 +54,12 @@ li{
 }
 a{
     text-decoration: none;
-    color: white;
-    &:hover{
-        color: #FFCD34;
-    }
 }
 
 // navbar
 .navbar{
     font-family: 'PartialSansKR-Regular';
-    height: 40px;
+    height: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -71,12 +67,13 @@ a{
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid black;
+    z-index: 3;
     .menus{
         @include displayFlex;
         justify-content: space-between;
         width: 40%;
         margin-right: 25px;
+        
         div{
             text-transform: uppercase;
             cursor: pointer;

@@ -37,25 +37,26 @@ const About = () => {
                       <p><span className='num'>2</span></p>
                       <p><span className='num'>3</span>クリエイティブなウェブサイトを作る仕事に憧れ</p>
                       <p><span className='num'>4</span><span className='pink'>フロントエンドエンジニア</span>になるための勉強を始めました。</p>
-                      <p><span className='num'>5</span>考えたことをすぐに行動に移す<span className='green'>積極性</span>を活かして</p>
-                      <p><span className='num'>6</span>絶えず<span className='blue'>アイデアを実現する</span>フロントエンドエンジニアになります。</p>
-                      <p><span className='num'>7</span></p>
+                      <p><span className='num'>5</span><span className='yellow'>「行動力」</span> 私を最もよく表す言葉です。</p>
+                      <p><span className='num'>6</span>考えたことをすぐに行動に移す<span className='green'>積極性</span>を活かして</p>
+                      <p><span className='num'>7</span>絶えず<span className='blue'>アイデアを実現する</span>フロントエンドエンジニアになります。</p>
+                      <p><span className='num'>8</span></p>
 
                       <p className='code'>
-                          <span className='num'>8</span><span className='blue'>&lt;</span><span className='red'>script</span ><span className='blue'>&gt;</span>
+                          <span className='num'>9</span><span className='blue'>&lt;</span><span className='red'>script</span ><span className='blue'>&gt;</span>
                       </p>
                       <p className='code'>
-                          <span className='num'>8</span><span className='comment'>//PROFILE</span>
+                          <span className='num'>10</span><span className='comment'>//PROFILE</span>
                       </p>
                       <p className='code'>
-                          <span className='num'>9</span>　<span className='pink'>const</span> PROFILE <span className='blue'>=</span> <span className='yellow'>&#123;</span>
+                          <span className='num'>11</span>　<span className='pink'>const</span> PROFILE <span className='blue'>=</span> <span className='yellow'>&#123;</span>
                       </p>
-                      <p className='code'><span className='num'>10</span>　　　name<span className='blue'>:　'</span>ユン・ダウォン<span className='blue'>'</span>,</p>
-                      <p className='code'><span className='num'>11</span >　　　 brith<span className='blue'>:　'</span>1997.09.12<span className='blue'>'</span>,</p>
-                      <p className='code'><span className='num'>12</span>　　　nationality<span className='blue'>:　'</span>韓国<span className='blue'>'</span>,</p>
-                      <p className='code'><span className='num'>13</span>　<span className='yellow'>&#125;</span></p>
-                      <p className='code'><span className='num'>14</span><span className='blue'>&lt;/</span><span className='red'>script</span><span className='blue'>&gt;</span></p>
-                      <p><span className='num'>15</span></p>
+                      <p className='code'><span className='num'>12</span>　　　name<span className='blue'>:　'</span>ユン・ダウォン<span className='blue'>'</span>,</p>
+                      <p className='code'><span className='num'>13</span >　　　 brith<span className='blue'>:　'</span>1997.09.12<span className='blue'>'</span>,</p>
+                      <p className='code'><span className='num'>14</span>　　　nationality<span className='blue'>:　'</span>韓国<span className='blue'>'</span>,</p>
+                      <p className='code'><span className='num'>15</span>　<span className='yellow'>&#125;</span></p>
+                      <p className='code'><span className='num'>16</span><span className='blue'>&lt;/</span><span className='red'>script</span><span className='blue'>&gt;</span></p>
+                      <p><span className='num'>17</span></p>
                   </div>
               </div>
           </div>
