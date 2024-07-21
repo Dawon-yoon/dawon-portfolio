@@ -22,11 +22,13 @@ html,body{
     background-color: #1B1D20;
     overflow-x: hidden;
 }
-
 //common styles
 .wrapper{
     width: 100vw;
     height: 100vh;
+}
+*::-webkit-scrollbar {
+    display: none !important;
 }
 
 h1 {
@@ -73,11 +75,72 @@ a{
         justify-content: space-between;
         width: 40%;
         margin-right: 25px;
-        
+        @media(max-width:986px){
+        font-size: 14px;    
+        }
         div{
             text-transform: uppercase;
             cursor: pointer;
             color: white;
+        }
+    }
+        
+}
+//sidebar
+.sidebar{
+    position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1B1D20;
+        z-index: 2;
+        overflow: hidden;
+        @include displayFlex;
+        justify-content: center;
+        color: white;
+        div {
+            margin-top: 8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        
+            span {
+                display: block;
+                text-align: center;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                transition: color 0.3s ease-in-out;
+                &:hover {
+                    color: #D6B138;
+                    }
+                }
+            }
+    }   
+    .open{
+        display: block;
+    }
+    .close {
+        display: none;
+    }
+//nav mediaquery
+@media(max-width:786px) {
+    .navbar{
+        .menus.hidden {
+            display: none;
+        }   
+    }
+    .show{
+        cursor: pointer;
+        font-size: 28px;
+        display: block;
+        color: white;
+        margin-right: 25px;
+        &:hover{
+            transform: scale(1.03);
+            transition: scale .5s ease-in-out;
         }
     }
 }
