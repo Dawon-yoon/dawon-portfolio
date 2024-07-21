@@ -86,6 +86,51 @@ a{
     }
         
 }
+
+//nav media query
+@media(max-width:786px) {
+    .navbar {
+        .menus.hidden {
+            display: none;
+        }
+    }
+
+    .show {
+        cursor: pointer;
+        font-size: 28px;
+        display: block;
+        color: white;
+        margin-right: 25px;
+
+        &:hover {
+            transform: scale(1.03);
+            transition: scale .5s ease-in-out;
+        }
+    }
+}
+
+//sidebar animation
+@keyframes sidebarOpen{
+        from {
+            transform: translateX(-2rem);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+@keyframes sidebarClose{
+            0% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-2rem);
+                opacity: 0;
+            }
+        }
+
 //sidebar
 .sidebar{
     position: fixed;
@@ -101,6 +146,7 @@ a{
         @include displayFlex;
         justify-content: center;
         color: white;
+        transition: all 0.7s cubic-bezier(.15, .52, .15, 1);;
         div {
             margin-top: 8rem;
             display: flex;
@@ -121,26 +167,12 @@ a{
     }   
     .open{
         display: block;
+        animation: sidebarOpen 0.7s cubic-bezier(.15, .52, .15, 1) forwards;
+    }
+    .closing{
+        animation: sidebarClose 0.7s cubic-bezier(.15, .52, .15, 1) forwards;
     }
     .close {
         display: none;
     }
-//nav mediaquery
-@media(max-width:786px) {
-    .navbar{
-        .menus.hidden {
-            display: none;
-        }   
-    }
-    .show{
-        cursor: pointer;
-        font-size: 28px;
-        display: block;
-        color: white;
-        margin-right: 25px;
-        &:hover{
-            transform: scale(1.03);
-            transition: scale .5s ease-in-out;
-        }
-    }
-}
+

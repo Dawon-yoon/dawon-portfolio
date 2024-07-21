@@ -3,11 +3,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
-  const [isSidebarOpen, SetIsSidebarOpen] = useState(false);
-
-  const handleSidebarToggle = () => { 
-    SetIsSidebarOpen(!isSidebarOpen);
-  }
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarClosing, setIsSidebarClosing] = useState(false);
+  
+   const handleSidebarToggle = () => { 
+     if (isSidebarOpen) {
+       setIsSidebarClosing(true); 
+       setTimeout(() => {
+         setIsSidebarOpen(!isSidebarOpen);
+       }, 700)
+       }else { 
+       setIsSidebarOpen(!isSidebarOpen);
+       setIsSidebarClosing(false);
+     }
+   }
+  
 
   return (
     <div>
@@ -25,7 +35,7 @@ const Nav = () => {
               <div>contact</div>
           </div>   
       </div>
-      <div className={`sidebar ${isSidebarOpen ? 'open' : 'close'}`}>
+      <div className={`sidebar ${isSidebarOpen ? 'open' : 'close'} ${isSidebarClosing && 'closing'}`}>
         <div>
           <span>about</span>
           <span>skill</span>
