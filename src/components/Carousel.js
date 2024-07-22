@@ -21,7 +21,7 @@ const Carousel = ({ item }) => {
     <div className='carousel'>
       {item.length > 1 && (
         <>
-          <button className='handleBtn' onClick={handlePrev}><FontAwesomeIcon icon={faChevronLeft} /></button>
+          <button className='handleBtn left' onClick={handlePrev}><FontAwesomeIcon icon={faChevronLeft} /></button>
         <div>
           <img alt='project-image' src={item[currentIndex].image} />
             <h3>{item[currentIndex].title}</h3>
@@ -35,7 +35,7 @@ const Carousel = ({ item }) => {
             <a href={item[currentIndex].view} target='_blank' rel='noopener noreferrer'><button className='view'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /> VIEW</button></a>
           </div>
           <div className='slide-area'>
-            <button className='btn' onClick={handlePrev}><FontAwesomeIcon icon={faChevronLeft} /></button>
+            <button className='btn left' onClick={handlePrev}><FontAwesomeIcon icon={faChevronLeft} /></button>
               <div>
                 {item.map((project, index) => (
                   <button
@@ -45,10 +45,10 @@ const Carousel = ({ item }) => {
                   ></button>
                 ))}
             </div>
-          <button className='btn' onClick={handleNext}><FontAwesomeIcon icon={faChevronRight} /></button>
+          <button className='btn right' onClick={handleNext}><FontAwesomeIcon icon={faChevronRight} /></button>
         </div>
         </div>
-        <button className='handleBtn' onClick={handleNext}><FontAwesomeIcon icon={faChevronRight} /></button> 
+        <button className='handleBtn right' onClick={handleNext}><FontAwesomeIcon icon={faChevronRight} /></button> 
         </>
       ) }      
     </div>

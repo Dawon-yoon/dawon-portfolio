@@ -5,6 +5,12 @@
     align-items: center;
     gap: 3rem;
     margin-top: 2.5rem;
+    .left{
+        animation: moveLtoR 1.5s ease-in-out infinite;
+    }
+    .right{
+        animation: moveRtoL 1.5s ease-in-out infinite;
+    }
     .handleBtn{
         background: none;
         border: none;
@@ -152,5 +158,29 @@
                 }
             }
         }
+    }
+}
+
+@keyframes moveLtoR {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-13px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveRtoL {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(13px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
