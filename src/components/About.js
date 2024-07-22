@@ -60,8 +60,6 @@ const About = () => {
                       </p>
                       <p className='code'><span className='num'>16</span>　<span className='yellow'>&#125;</span></p>
                       <p><span className='num'>17</span><span className='blue'>&lt;/</span><span className='red'>script</span><span className='blue'>&gt;</span></p>
-                      <p><span className='num'>18</span></p>
-                      <p><span className='num'>19</span></p>
                   </div>
               </div>
           </div>
