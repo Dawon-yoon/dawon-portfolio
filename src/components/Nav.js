@@ -29,18 +29,34 @@ const Nav = () => {
         {isSidebarOpen? (<FontAwesomeIcon icon={faX} />):(<div><FontAwesomeIcon icon={faBars} /></div>)}
       </div> 
           <div className='menus hidden'>
-              <div>about</div>
-              <div>skill</div>
-              <div>project</div>
-              <div>contact</div>
+          <div>
+            <a href='#about'>about</a>
+          </div>
+          <div>
+            <a href='#skill'>skill</a>
+          </div>
+          <div>
+            <a href='#project'>project</a>
+            </div>
+            <div>
+              <a href='#contact'>contact</a>
+            </div>
           </div>   
       </div>
       <div className={`sidebar ${isSidebarOpen ? 'open' : 'close'} ${isSidebarClosing && 'closing'}`}>
         <div>
-          <span>about</span>
-          <span>skill</span>
-          <span>project</span>
-          <span>contact</span>
+          <span>
+            <a href='#about'>about</a>
+          </span>
+          <span>
+            <a href='#skill'>skill</a>
+          </span>
+          <span>
+            <a href='#project'>project</a>
+          </span>
+          <span>
+            <a href='#contact'>contact</a>
+          </span>
         </div>
       </div>
     </div>

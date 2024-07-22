@@ -6,10 +6,9 @@ import { faCopy, faCircleUser } from '@fortawesome/free-regular-svg-icons';
 import Stars from './Stars';
 import '../scss/about.scss';
 
-
 const About = () => {
   return (
-      <div className='wrapper about'>
+      <div id='about' className='wrapper about'>
           <Stars/>
           <h2>about me</h2>
           <div className='browser'>
@@ -46,7 +45,8 @@ const About = () => {
                           <span className='num'>9</span><span className='blue'>&lt;</span><span className='red'>script</span ><span className='blue'>&gt;</span>
                       </p>
                       <p className='code'>
-                          <span className='num'>10</span><span className='comment'>//PROFILE</span>
+                          <span className='num'>10</span>
+                          <span className='comment'>//PROFILE</span>
                       </p>
                       <p className='code'>
                           <span className='num'>11</span>　<span className='pink'>const</span> PROFILE <span className='blue'>=</span> <span className='yellow'>&#123;</span>
@@ -54,9 +54,14 @@ const About = () => {
                       <p className='code'><span className='num'>12</span>　　　name<span className='blue'>:　'</span>ユン・ダウォン<span className='blue'>'</span>,</p>
                       <p className='code'><span className='num'>13</span >　　　 brith<span className='blue'>:　'</span>1997.09.12<span className='blue'>'</span>,</p>
                       <p className='code'><span className='num'>14</span>　　　nationality<span className='blue'>:　'</span>韓国<span className='blue'>'</span>,</p>
-                      <p className='code'><span className='num'>15</span>　<span className='yellow'>&#125;</span></p>
-                      <p className='code'><span className='num'>16</span><span className='blue'>&lt;/</span><span className='red'>script</span><span className='blue'>&gt;</span></p>
-                      <p><span className='num'>17</span></p>
+                      <p className='code'>
+                          <span className='num'>15</span>　　　language<span className='blue'>:　</span>
+                          <span className='yellow'>[</span> <span className='blue'>'</span>韓国語<span className='blue'>'</span>, <span className='blue'>'</span>日本語<span className='blue'>'</span>, <span className='blue'>'</span>中国語<span className='blue'>'</span> <span className='yellow'>]</span>
+                      </p>
+                      <p className='code'><span className='num'>16</span>　<span className='yellow'>&#125;</span></p>
+                      <p><span className='num'>17</span><span className='blue'>&lt;/</span><span className='red'>script</span><span className='blue'>&gt;</span></p>
+                      <p><span className='num'>18</span></p>
+                      <p><span className='num'>19</span></p>
                   </div>
               </div>
           </div>

@@ -7,7 +7,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   return (
-    <div className='wrapper contact'>
+    <div id='contact' className='wrapper contact'>
       <h2>Contact</h2>
       <div>
         <div>

@@ -19,7 +19,6 @@
     div{
         color: white;
         img{
-            margin-top: 3rem;
             width: 700px;
             height: 400px;
         }
@@ -102,7 +101,7 @@
                 background-color: white;
                 border: none;
                 width: 12px;
-                height: 10px;
+                height: 11px;
                 border-radius: 50%;
                 &.active{
                     background-color: #FACD35;
@@ -127,6 +126,7 @@
 
 @media(max-width:786px){
     .carousel{
+       padding:0 3rem;
         div{
            padding: 0 auto;
            h3{
@@ -140,7 +140,7 @@
            }
             img{
                 width: 100%;
-                height: 280px;
+                height: 300px;
             }
             .btn-area{
                 span{

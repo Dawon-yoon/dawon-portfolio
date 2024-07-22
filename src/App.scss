@@ -26,6 +26,10 @@ html,body{
 .wrapper{
     width: 100vw;
     height: 100vh;
+    h2{
+        padding-top: 3rem;
+        margin-bottom: 0;
+    }
 }
 *::-webkit-scrollbar {
     display: none !important;
@@ -56,7 +60,8 @@ li{
 }
 a{
     text-decoration: none;
-}
+    color: white;
+}   
 
 // navbar
 .navbar{

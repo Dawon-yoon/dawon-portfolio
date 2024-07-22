@@ -13,7 +13,7 @@ const Skills = ({ skillData,toolData }) => {
     }
 
   return (
-    <div className='bg-dote'>
+    <div id='skill' className='bg-dote'>
           <h2>Tech Skill</h2>
           <div className='skills'>
           <span className='tag'># MY-SKILL</span>

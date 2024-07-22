@@ -60,7 +60,7 @@ const Projects = () => {
     }
   ]
   return (
-    <div className='wrapper project'>
+    <div id='project' className='wrapper project'>
       <h2>Project</h2>
       <Carousel item={projectsData} />
     </div>
