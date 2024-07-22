@@ -6,12 +6,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     animation: moveStar 40s linear infinite;
-}
-
-.sky .star {
-    fill: #fff;
-    stroke: none;
-    stroke-width: 0;
+    .star{
+        fill: #fff;
+        stroke: none;
+        stroke-width: 0;
+    }
 }
 
 @keyframes moveStar {
