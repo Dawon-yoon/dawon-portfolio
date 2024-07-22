@@ -23,13 +23,13 @@
                 .text1 {
                         top: 45%;
                         left: -100%;
-                        transition: transform 0.7s cubic-bezier(.56, .19, .54, .99);
+                        transition: transform 0.5s ease;
                     }
                 
                     .text2 {
                         bottom: 45%;
                         right: -100%;
-                        transition: transform 0.7s cubic-bezier(.56, .19, .54, .99);
+                        transition: transform 0.5s ease;
                     }
             }
 

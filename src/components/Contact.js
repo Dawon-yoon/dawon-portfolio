@@ -1,15 +1,25 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import '../scss/contact.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-
 const Contact = () => {
+  useEffect(() => { 
+    const handleScroll = () => { 
+      const scrollPosition = window.scrollY;
+      const texts = document.querySelector('.texts');
+      texts.style.transform = `translateY(-${scrollPosition * 0.05}px)`;
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => { 
+      window.removeEventListener('scroll', handleScroll);
+    }
+  },[])
   return (
     <div id='contact' className='wrapper contact'>
       <h2>Contact</h2>
-      <div>
+      <div className='texts'>
         <div>
           <span><FontAwesomeIcon icon={faSquarePhone} />  PHONE</span>
           <p>080 6754 8507</p>
@@ -25,7 +35,7 @@ const Contact = () => {
         <span className='border'></span>
       </div>
       
-      <p className='footer'>Copyright &#169; 2024 YOON DAWON ALL rights reserved.</p>
+      <p className='footer'>Copyright &#169; 2024 YOON DAWON Portfolio ALL rights reserved.</p>
     </div>
   )
 }

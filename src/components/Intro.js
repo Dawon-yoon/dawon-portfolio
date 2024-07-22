@@ -9,15 +9,15 @@ const Intro = () => {
 
   useEffect(() => { 
     const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            const text1 = document.querySelector('.text1');
-            const text2 = document.querySelector('.text2');
-            text1.style.transform = `translateX(${scrollPosition}px)`;
-            text2.style.transform = `translateX(-${scrollPosition}px)`;
-        };
+      const scrollPosition = window.scrollY;
+      const text1 = document.querySelector('.text1');
+      const text2 = document.querySelector('.text2');
+      text1.style.transform = `translateX(${scrollPosition}px)`;
+      text2.style.transform = `translateX(-${scrollPosition}px)`;
+    };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll);
+    return () => { window.removeEventListener('scroll', handleScroll) };
   })
 
   return (

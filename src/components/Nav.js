@@ -31,15 +31,19 @@ const Nav = () => {
           <div className='menus hidden'>
           <div>
             <a href='#about'>about</a>
+            <span className='hover'></span>
           </div>
           <div>
             <a href='#skill'>skill</a>
+            <span className='hover'></span>
           </div>
           <div>
             <a href='#project'>project</a>
+            <span className='hover'></span>
             </div>
             <div>
-              <a href='#contact'>contact</a>
+            <a href='#contact'>contact</a>
+            <span className='hover'></span>
             </div>
           </div>   
       </div>
