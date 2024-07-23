@@ -79,7 +79,7 @@ a{
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    z-index: 4;
+    z-index: 5;
     .menus{
         @include displayFlex;
         justify-content: space-between;
@@ -167,7 +167,7 @@ a{
         width: 100vw;
         height: 100vh;
         background-color: #1B1D20;
-        z-index: 3;
+        z-index: 4;
         overflow: hidden;
         @include displayFlex;
         justify-content: center;
@@ -207,7 +207,7 @@ a{
         position: fixed;
         bottom: 1rem;
         right: 1.2rem;
-        z-index: 4;
+        z-index: 3;
         &:hover{
             span{
                 display: block;
