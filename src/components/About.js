@@ -46,7 +46,7 @@ const About = () => {
                       </p>
                       <p className='code'>
                           <span className='num'>10</span>
-                          <span className='comment'>//PROFILE</span>
+                          <span className='comment'>&#47;&#47;PROFILE</span>
                       </p>
                       <p className='code'>
                           <span className='num'>11</span>　<span className='pink'>const</span> PROFILE <span className='blue'>=</span> <span className='yellow'>&#123;</span>
