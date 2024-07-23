@@ -13,17 +13,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 25px;
         gap: 3rem;
         @media (max-width: 768px) {
             gap: 2rem;
+            font-size: 23px;
         }
         span{
-            font-size: 25px;
             font-weight: 500;
-
         }
         p{
-            font-size: 25px;
             a{
                 transition: color 0.3s ease-in-out;
                 color: white;
