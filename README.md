@@ -1,6 +1,6 @@
 # YOON DAWON Portfolio
 
-- https://yoondawon-portfolio.netlify.app
+- https://yoondawon-portfolio.netlify.app/
   stack: react, scss
   React,scss で作った個人用ポートフォリオサイトです。
   シンプルで見やすいようにデザインしました。

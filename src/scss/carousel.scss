@@ -161,6 +161,34 @@
     }
 }
 
+@media(max-width:500px) {
+    .carousel {
+        div {
+            h3 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+            
+            .btn-area {
+                span {
+                    font-size: 12px;
+                }
+                
+                button {
+                    margin-top: 1rem;
+                    min-width: 50px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding: 0.5rem 0.9rem;
+                    }
+                }
+            }
+        }
+}
+
 @keyframes moveLtoR {
     0%{
         transform: translateX(0);
