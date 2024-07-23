@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import ScrollTop from './components/ScrollTop';
 
 function App() {
   const path = process.env.PUBLIC_URL;
@@ -67,6 +68,7 @@ function App() {
   return (
     <div>
       <Nav />
+      <ScrollTop />
       <Intro />
       <About />
       <Skills skillData={skillData} toolData={toolData} />
