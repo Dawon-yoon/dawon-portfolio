@@ -57,6 +57,15 @@ const Projects = () => {
       tags: ['#Javascript'],
       github: 'https://github.com/Dawon-yoon/number-guess-game',
       view:'https://fancy-sprinkles-22fa4d.netlify.app/'
+    },
+    {
+      title: 'Portfolio',
+      work: '個人プロジェクト',
+      image:`${path}/img/project/portfolio.png`,
+      description: 'React,SCSSを使用したプロジェクトを展示しているポートフォリオサイトです。スクロールアニメーション・hoverアニメーション等を利用してinteractiveな使用感にしています。',
+      tags: ['#React','#SCSS','#interactive','#responsive'],
+      github: 'https://github.com/Dawon-yoon/dawon-portfolio',
+      view:'https://yoondawon-portfolio.netlify.app'
     }
   ]
   return (
