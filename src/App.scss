@@ -228,6 +228,14 @@ a{
             transform: translate(-50%,-50%);
             transition: display 0.3s ease;
         }
+        @media (max-width: 768px) {
+            img{
+                width: 80px;
+            }
+            span{
+                font-size: 11px;
+            }
+        }
     }
 @keyframes rotating{
     from{
