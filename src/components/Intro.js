@@ -24,7 +24,7 @@ const Intro = () => {
       <div className='animation'>
       <div
         className='circle'>
-        <img src={`${path}/img/assets/moon2.png`} />
+        <img src={`${path}/img/assets/moon2.png`} alt='moon'/>
       </div>
       <div className='text'>
         <h1 className='text1'>yoon dawon</h1>
